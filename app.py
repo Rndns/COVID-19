@@ -12,6 +12,7 @@ app.secret_key = 'key'
 app.config.from_object(config)
 
 app.register_blueprint(irt.bp)
+app.register_blueprint(cr.bp)
 
 db.init_app(app)
 migrate.init_app(app, db)
