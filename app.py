@@ -2,6 +2,7 @@ from flask import Flask, render_template, session
 from models import db, migrate
 import routes.infection_route as irt
 import routes.cc_route as cr
+import d0208_project_mini04.routes.hosp_route as hr
 
 import config
 
@@ -13,6 +14,7 @@ app.config.from_object(config)
 
 app.register_blueprint(irt.bp)
 app.register_blueprint(cr.bp)
+app.register_blueprint(hr.bp)
 
 db.init_app(app)
 migrate.init_app(app, db)

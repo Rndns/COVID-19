@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>코로나치료 가능병원</title>
+    <script>
+        function a(){
+            location.href="/covid19/hosp/getbyname/"+f.yadmNm.value
+        }
+        function b(){
+            location.href="/covid19/hosp/getbyaddr/"+f.addr.value
+        }
+    </script>
+</head>
+<body style="background-color: antiquewhite;"><!--&nbsp;(1칸)&ensp;(두칸)&emsp;(세칸) -->
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+<h3 style="font-size: xx-large; margin-left: 575px;">코로나치료 가능병원</h3>
+<form name="f">
+병원명 검색: <input type="text" name="yadmNm"><input type="button" value="검색" onclick="a()"><br/>
+주소 검색: <input type="text" name="addr"><input type="button" value="검색" onclick="b()"><br/>
+</form>
+<table border="1">
+    <tr><th>병원명</th><th>시군구명</th><th>주소</th>
+    {% for h in hinfo %}
+    <tr>
+        <td>{{h.yadmNm.text}}</td><td>{{h.addr.text.split(' ')[1]}}</td><td>{{h.addr.text}}</td>
+    </tr>
+    {% endfor %}
+</table>
+</body>
+</html>
