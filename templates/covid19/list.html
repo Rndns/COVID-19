@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body style="background-color: antiquewhite; position: absolute; width: 1556px;"><!--&nbsp;(1칸)&ensp;(두칸)&emsp;(세칸) -->
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+<h3 style="font-size: xx-large; text-align: center;">(서울)예방접종센터 조회</h3>
+&emsp;&emsp;&emsp;
+<table border="1" style="margin-left: 390px; width: 50%; height: auto; text-align-last: center;">
+     <tr ><th >예방 접종 센터 명</th><th>시설명</th></tr>
+     {% for c in centers %}
+          <tr>
+              <td>{{c.centerName}}</td>
+              <td><a href="/covid19/detail/{{c.id}}"> {{c.facilityName}}</a></td>
+          </tr>
+     {% endfor %}
+</table>
+</body>
+</html>

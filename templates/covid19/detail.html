@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body style="background-color: antiquewhite; position: absolute; width: 1556px;"><!--&nbsp;(1칸)&ensp;(두칸)&emsp;(세칸) -->
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+<h3 style="font-size: xx-large; text-align: center;">{{c.facilityName}} 상세정보</h3><br/>
+    <div style="border: solid; width: 50%; height: auto; padding: 38px; margin-inline: 360px;">
+        <dd>예방 접종 센터 고유 식별자 : {{c.id}}</dd><br/>
+        <dd>예방 접종 센터 명 : {{c.centerName}}</dd><br/>
+        <dd>시도 : {{c.sido}}</dd><br/>
+        <dd>시군구 : {{c.sigungu}}</dd><br/>
+        <dd>시설명 : {{c.facilityName}}</dd><br/>
+        <dd>우편 번호 : {{c.zipCode}}</dd><br/>
+        <dd>주소 : {{c.address}}</dd><br/>
+        <dd>예방 접종 센터 유형 : {{c.centerType}}</dd><br/>
+        <dd>운영기관 : {{c.org}}</dd><br/>
+        <dd>사무실 전화번호 : {{c.phoneNumber}}</dd><br/>
+        <dd style="border-top: double;"><br/>좌표 정보(위도) : {{c.lat}}</dd><br/>
+        <dd>좌표 정보(경도) : {{c.lng}}</dd><br/>
+
+
+<!--정보 등록 : {{c.createdAt}}-->
+<!--정보 수정 : {{c.updatedAt}}-->
+<!--운영기관 : {{c.org}}<br/>-->
+        </div>
+</body>
+</html>

@@ -1,6 +1,7 @@
 from flask import Flask, render_template, session
 from models import db, migrate
 import routes.infection_route as irt
+import routes.cc_route as cr
 
 import config
 
