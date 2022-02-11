@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body style="background-color: antiquewhite;"><!--&nbsp;(1칸)&ensp;(두칸)&emsp;(세칸) -->
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+<h3 style="font-size: xx-large; text-align: center;">예방접종률 현황</h3>
+<table border="1" style="margin:auto; text-align: center;">
+    <tr><th>접종일</th><th>접종대상자</th><th>당일 1차 접종자 수</th><th>1차 접종 누계</th><th>1차 접종률</th><th>당일 2차 접종자 수</th><th>2차 접종 누계</th><th>2차 접종률</th><th>당일 추가 접종자 수</th><th>추가접종 누계</th><th>추가접종률</th><th>추가접종대상자</th></tr>
+
+    {% for i in status %}
+        <tr>
+           <td>{{i.S_VC_DT}}</td>
+           <td>{{i.FIR_SUB}}명</td>
+           <td>{{i.FIR_INC1}}명</td>
+            <td>{{i.FIR_INC}}명</td>
+            <td>{{i.FIR_INC_RATE}}%</td>
+            <td>{{i.SCD_INC1}}명</td>
+            <td>{{i.SCD_INC}}명</td>
+            <td>{{i.SCD_INC_RATE}}%</td>
+            <td>{{i.ADD_INC1}}명</td>
+            <td>{{i.ADD_INC}}명</td>
+            <td>{{i.ADD_INC_RATE}}%</td>
+            <td>{{i.ADD_SUB}}명</td>
+        </tr>
+    {% endfor %}
+
+
+    <!--접종대상자 {{FIR_SUB}}<br/>-->
+<!--당일 1차 접종자 수 {{FIR_INC1}}<br/>-->
+<!--1차 접종 누계 {{FIR_INC}}<br/>-->
+<!--1차 접종률 {{FIR_INC_RATE}}<br/>-->
+<!--당일 2차 접종자 수 {{SCD_INC1}}<br/>-->
+<!--2차 접종 누계 {{SCD_INC}}<br/>-->
+<!--2차 접종률 {{SCD_INC_RATE}}<br/>-->
+<!--당일 추가 접종자 수 {{ADD_INC1}}<br/>-->
+<!--추가접종 누계 {{ADD_INC}}<br/>-->
+<!--추가접종률 {{ADD_INC_RATE}}<br/>-->
+<!--추가접종대상자 {{ADD_SUB}}<br/>-->
+</table>
+</body>
+</html>
+
+<!--접종일 {{S_iC_DT}}<br/>-->
+<!--접종대상자 {{FIR_SUB}}<br/>-->
+<!--당일 1차 접종자 수 {{FIR_INC1}}<br/>-->
+<!--1차 접종 누계 {{FIR_INC}}<br/>-->
+<!--1차 접종률 {{FIR_INC_RATE}}<br/>-->
+<!--당일 2차 접종자 수 {{SCD_INC1}}<br/>-->
+<!--2차 접종 누계 {{SCD_INC}}<br/>-->
+<!--2차 접종률 {{SCD_INC_RATE}}<br/>-->
+<!--당일 추가 접종자 수 {{ADD_INC1}}<br/>-->
+<!--추가접종 누계 {{ADD_INC}}<br/>-->
+<!--추가접종률 {{ADD_INC_RATE}}<br/>-->
+<!--추가접종대상자 {{ADD_SUB}}<br/>-->

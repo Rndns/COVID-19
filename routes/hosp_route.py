@@ -3,7 +3,7 @@ import d0208_project_mini04.model.hosp.service as hservice
 
 service = hservice.HospService()
 
-bp = Blueprint('covid19', __name__, url_prefix='/covid19/hosp')
+bp = Blueprint('hosp', __name__, url_prefix='/hosp')
 
 @bp.route('', methods=['GET'])
 def hinfo():

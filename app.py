@@ -3,6 +3,7 @@ from models import db, migrate
 import routes.infection_route as irt
 import routes.cc_route as cr
 import d0208_project_mini04.routes.hosp_route as hr
+import d0208_project_mini04.routes.status_route as sr
 
 import config
 
@@ -15,6 +16,7 @@ app.config.from_object(config)
 app.register_blueprint(irt.bp)
 app.register_blueprint(cr.bp)
 app.register_blueprint(hr.bp)
+app.register_blueprint(sr.bp)
 
 db.init_app(app)
 migrate.init_app(app, db)

@@ -1,4 +1,4 @@
-import mini_project.hosp.vo as vo
+import d0208_project_mini04.model.hosp.vo as vo
 import requests
 from bs4 import BeautifulSoup
 

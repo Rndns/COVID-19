@@ -1,5 +1,5 @@
 from flask import render_template, request, Blueprint
-import covid19.centerCheck.cc_service as cc_service
+import d0208_project_mini04.model.centerCheck.cc_service as cc_service
 
 service = cc_service.centerCheckService()
 

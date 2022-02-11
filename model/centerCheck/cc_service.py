@@ -1,4 +1,4 @@
-import covid19.centerCheck.cc_vo as vo
+import d0208_project_mini04.model.centerCheck.cc_vo as vo
 import requests
 import json
 
