@@ -4,31 +4,29 @@
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
-<body>
-    <h3>검색 설정</h3>
+<body style="background-color: antiquewhite; position: absolute; width: 1556px;">
+    <h3 style="text-align: center; font-size: 30px;">검색 설정</h3>
     <form action="" method="post">
-        <div>
+        <div style="margin-inline: 588px; border: solid; padding: 33px;">
             <h4>백신 단계</h4>
             <input type="radio" name="location" value="k">1차
             <input type="radio" name="location" value="s">2차
             <input type="radio" name="location" value="r">3차
-        </div>
-        <div>
+
             <h4>감염 여부</h4>
             <input type="radio" name="location" value="k">감염
             <input type="radio" name="location" value="s">비감염
             <input type="radio" name="location" value="r">완치
-        </div>
-        <div>
+
             <h4>날짜</h4>
-            <input type="date" name="date">
-        </div>
+            <input type="date" name="date"><br/>
+
         </br>
-        <div>
+
             <a href="/covid19/list"><button type="button">병원선택</button></a>
-        </div>
-        <div>
-            <input type="submit" value="join"><br/>
+
+            <a href="/"><button type="button">예약하기</button></a>
+<!--            <input type="submit" value="예약하기"><br/>-->
         </div>
     </form>
 </body>
