@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div align="center"><img src="/static/graph/chartS.png"></div>
+    <table align="center" cellpadding="10px" >
+        <caption> </caption>
+        <colgroup>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+        </colgroup>
+        <thead>
+            <tr>
+                <th>날짜</th><th> 총 확진 </th><th> 추가 확진 </th><th> 치료중 </th><th> 총 퇴원 </th><th> 추가 퇴원 </th><th> 사망 </th>
+            </tr>
+        </thead>
+        {% for k in res %}
+        <tr>
+            <td>{{k.S_DT}}</td><td>{{k.S_HJ}}</td><td>{{k.SN_HJ}}</td>
+            <td>{{k.S_CARE}}</td><td>{{k.S_RECOVER}}</td><td>{{k.SN_RECOVER}}</td><td>{{k.S_DEATH}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
