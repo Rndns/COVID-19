@@ -12,14 +12,16 @@
         }
     </script>
 </head>
-<body style="background-color: antiquewhite;"><!--&nbsp;(1칸)&ensp;(두칸)&emsp;(세칸) -->
+<body style="background-color: antiquewhite; position: absolute; width: 1556px;"><!--&nbsp;(1칸)&ensp;(두칸)&emsp;(세칸) -->
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-<h3 style="font-size: xx-large; margin-left: 575px;">코로나치료 가능병원</h3>
-<form name="f">
-병원명 검색: <input type="text" name="yadmNm"><input type="button" value="검색" onclick="a()"><br/>
+<h3 style="font-size: xx-large; text-align: center;">코로나치료 가능병원</h3>
+
+<form name="f" style="margin-bottom: 23px; margin-inline: 175px">
+병원명 검색: <input type="text" name="yadmNm"><input type="button" value="검색" onclick="a()">
+<br/>
 주소 검색: <input type="text" name="addr"><input type="button" value="검색" onclick="b()"><br/>
 </form>
-<table border="1">
+<table border="1" style="margin-inline: 176px;">
     <tr><th>병원명</th><th>시군구명</th><th>주소</th>
     {% for h in hinfo %}
     <tr>

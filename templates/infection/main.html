@@ -4,25 +4,25 @@
     <meta charset="UTF-8">
     <title>코로나 현황</title>
 </head>
-<body>
-    <h3>검색 설정</h3>
+<body style="background-color: antiquewhite; position: absolute; width: 1556px;"><br/><br/>
+    <h3 style="text-align: center; font-size: 30px;">검색 설정</h3><br/>
     <form action="/infection/location" method="post">
-        <div>
+        <div style="margin-inline: 588px; border: solid; padding: 33px;">
             <h4>범위</h4>
             <input type="radio" name="location" value="k">전국
             <input type="radio" name="location" value="s">서울
             <input type="radio" name="location" value="r">자치구
-        </div>
-        <div>
+
             <h4>기간</h4>
             시작일(당일=1) : <input type="number" name="start"></br>
             종료일(>=시작) : <input type="number" name="end">
-        </div>
-        <div>
+
             <h4>날짜(자치구)</h4>
             <input type="date" name="date"></br>
+            </br>
+            <input type="submit" value="검색">
         </div>
-        <input type="submit" value="검색">
+
     </form>
 </body>
 </html>

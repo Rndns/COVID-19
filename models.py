@@ -22,7 +22,7 @@ class Reserve(db.Model):
     date = db.Column(db.String(20), nullable=False)
 
 
-class MemberService:
+class MemService:
     def join(self, m: Member):
         db.session.add(m)
         db.session.commit()

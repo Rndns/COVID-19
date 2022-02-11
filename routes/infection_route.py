@@ -68,14 +68,19 @@ def location():
         return render_template('infection/region.html', res=res)
 
 
-@bp.route('/graph')
-def graph():
-    img_path = 'static/graph/my_plot.png'
+@bp.route('/case')
+def case():
+    return render_template('infection/test.html')
 
-    x = [1, 2, 3, 4]
-    y = [3, 8, 5, 6]
-    fig, ax = plt.subplots()
-    plt.plot(x, y)
-    fig.savefig(img_path)
-    img_path = '/' + img_path
-    return render_template('test.html', img_path=img_path)
+
+# @bp.route('/graph')
+# def graph():
+#     img_path = 'static/graph/my_plot.png'
+#
+#     x = [1, 2, 3, 4]
+#     y = [3, 8, 5, 6]
+#     fig, ax = plt.subplots()
+#     plt.plot(x, y)
+#     fig.savefig(img_path)
+#     img_path = '/' + img_path
+#     return render_template('test.html', img_path=img_path)
